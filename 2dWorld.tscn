@@ -13,7 +13,7 @@ extents = Vector2( 32.2261, 35.3908 )
 custom_solver_bias = 0.0
 extents = Vector2( 32.2261, 35.2617 )
 
-[node name="2dWorld" type="Node2D"]
+[node name="2dWorld" type="Node2D" index="0"]
 
 _sections_unfolded = [ "Transform" ]
 

@@ -114,7 +114,7 @@ radial_segments = 64
 rings = 32
 is_hemisphere = false
 
-[node name="platformer" type="Spatial" index="0"]
+[node name="platformer" type="Spatial"]
 
 script = ExtResource( 1 )
 

@@ -5,6 +5,7 @@ const GRAVITY = 20
 const JUMP_HEIGHT = -300
 const SPEED = 200
 const SCREEN_WIDTH = 800
+const SCREEN_HEIGHT = 200
 
 var motion = Vector2()
 
@@ -13,6 +14,8 @@ func _process(delta):
 		position.x = 0
 	elif(position.x < 0):
 		position.x = SCREEN_WIDTH - 20 
+	if(position.y > SCREEN_HEIGHT):
+		get_tree().reload_current_scene()
 
 func _physics_process(delta):
 	motion.y += GRAVITY
